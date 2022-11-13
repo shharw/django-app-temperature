@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Secure{% endblock title %}
+
+{% block content %}
+<div class="container">
+    {% if user.is_authenticated %}
+        <h1 class="text-center mb-3">Secure</h1>
+        <h3>Hello, {{ user.username }}, you are logged in!</h3>
+    {% endif %}
+</div>
+{% endblock content %}

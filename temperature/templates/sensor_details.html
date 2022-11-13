@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Sensor Details{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mb-3">
+        Temperature measurement data from each of the sensors <i>by increasing coordinates</i>
+    </h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Temperature</th>
+            <th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for sensor in sensors  %}
+                <tr>
+                    <th>{{sensor.id}}</th>
+                    <td>{{sensor.sensor_name}}</td>
+                    <td>{{sensor.temperature}}°</td>
+                    <td>{{sensor.sensor_location}}</td>
+                </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>    
+{% endblock content %}

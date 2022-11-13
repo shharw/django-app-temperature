@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Sensors Location{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mb-3">List of all sensor locations</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for sensor in sensors  %}
+                <tr>
+                    <th>{{sensor.id}}</th>
+                    <td>{{sensor.sensor_name}}</td>
+                    <td>{{sensor.sensor_location}}</td>
+                </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock content %}
