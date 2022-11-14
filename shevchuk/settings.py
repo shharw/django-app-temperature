@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'temperature.apps.TemperatureConfig',
     'social_django',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

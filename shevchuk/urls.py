@@ -4,7 +4,6 @@ from django.conf import settings
 from django.contrib.auth.views import LogoutView
 from django.views.generic.base import RedirectView
 
-
 urlpatterns = [    
     path('temperature/', include('temperature.urls')),
     path('admin/', admin.site.urls),

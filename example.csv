@@ -1,0 +1,2 @@
+id,sensor_location,measurement_date,measurement_time,temperature,sensor_name,model_sensor,sensor_group
+15,"hello","2022-11-10","10:18:54",7,"hello","NhelloTC","hello"
